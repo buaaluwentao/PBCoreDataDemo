@@ -39,10 +39,17 @@
 }
 
 - (void)write:(UIView *)write {
-    PBPerson *p = [[PBPerson alloc] init];
-    p.name = @"lwt";
-    p.age = 18;
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"PBPerson" inManagedObjectContext:
+                                   [PBPersonDataManager viewContext]];
+    PBPerson *p = [[PBPerson alloc] initWithEntity:entity insertIntoManagedObjectContext:[PBPersonDataManager viewContext]];
+    p.name = @"zql";
+    p.age = 16;
     [PBPersonDataManager save:p];
 }
 
 @end
+
+//更新data model的方法。
+//1. 基于原data model新建data model2，并将当前data model版本切换为版本2
+//2. 创建映射文件
+//3. 重新生成NSManagedObject subclass（选中模型文件，editor）

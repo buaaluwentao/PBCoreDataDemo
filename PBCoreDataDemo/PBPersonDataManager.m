@@ -6,7 +6,6 @@
 //
 
 #import "PBPersonDataManager.h"
-#import <CoreData/CoreData.h>
 #import "PBPerson+CoreDataProperties.h"
 
 static NSPersistentContainer *_container;
@@ -35,15 +34,17 @@ static NSPersistentContainer *_container;
 }
 
 + (void)save:(PBPerson *)p {
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"PBPerson" inManagedObjectContext:self.viewContext];
+    /*NSEntityDescription *entity = [NSEntityDescription entityForName:@"PBPerson" inManagedObjectContext:self.viewContext];
     NSManagedObject *obj = [[NSManagedObject alloc] initWithEntity:entity insertIntoManagedObjectContext:self.viewContext];
     [obj setValue:p.name forKey:@"name"];
     [obj setValue:@(p.age) forKey:@"age"];
     NSError *error;
+    
     [self.viewContext save:&error];
     if (error) {
         @throw @"出错了";
-    }
+    }*/
+    [self.viewContext save:nil];
 }
 
 + (NSArray *)read {

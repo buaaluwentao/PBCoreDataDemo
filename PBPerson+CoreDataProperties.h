@@ -2,7 +2,7 @@
 //  PBPerson+CoreDataProperties.h
 //  PBCoreDataDemo
 //
-//  Created by wentao lu on 2021/4/21.
+//  Created by wentao lu on 2021/4/22.
 //
 //
 
@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<PBPerson *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *name;
 @property (nonatomic) int16_t age;
+@property (nullable, nonatomic, copy) NSString *name;
+@property (nullable, nonatomic, copy) NSString *nation;
 
 @end
 

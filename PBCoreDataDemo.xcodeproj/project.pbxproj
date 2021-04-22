@@ -18,6 +18,7 @@
 		5513A5D12630450F002D012E /* PBPersonDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513A5D02630450F002D012E /* PBPersonDataManager.m */; };
 		5513A5E92630570A002D012E /* PBPerson+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513A5E72630570A002D012E /* PBPerson+CoreDataClass.m */; };
 		5513A5EA2630570A002D012E /* PBPerson+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 5513A5E82630570A002D012E /* PBPerson+CoreDataProperties.m */; };
+		556777A82631A2180091702E /* v1_to_v1.1.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 556777A72631A2180091702E /* v1_to_v1.1.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		5513A5E62630570A002D012E /* PBPerson+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PBPerson+CoreDataClass.h"; sourceTree = "<group>"; };
 		5513A5E72630570A002D012E /* PBPerson+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PBPerson+CoreDataClass.m"; sourceTree = "<group>"; };
 		5513A5E82630570A002D012E /* PBPerson+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PBPerson+CoreDataProperties.m"; sourceTree = "<group>"; };
+		556777A62631A1210091702E /* PBCoreDataDemo2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PBCoreDataDemo2.xcdatamodel; sourceTree = "<group>"; };
+		556777A72631A2180091702E /* v1_to_v1.1.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; name = v1_to_v1.1.xcmappingmodel; path = PBCoreDataDemo/PBCoreDataDemo.xcdatamodeld/v1_to_v1.1.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		5513A5A6263043F8002D012E = {
 			isa = PBXGroup;
 			children = (
+				556777A72631A2180091702E /* v1_to_v1.1.xcmappingmodel */,
 				5513A5E52630570A002D012E /* PBPerson+CoreDataProperties.h */,
 				5513A5E62630570A002D012E /* PBPerson+CoreDataClass.h */,
 				5513A5E72630570A002D012E /* PBPerson+CoreDataClass.m */,
@@ -167,6 +171,7 @@
 				5513A5E92630570A002D012E /* PBPerson+CoreDataClass.m in Sources */,
 				5513A5C8263043F8002D012E /* main.m in Sources */,
 				5513A5BA263043F8002D012E /* ViewController.m in Sources */,
+				556777A82631A2180091702E /* v1_to_v1.1.xcmappingmodel in Sources */,
 				5513A5EA2630570A002D012E /* PBPerson+CoreDataProperties.m in Sources */,
 				5513A5C0263043F8002D012E /* PBCoreDataDemo.xcdatamodeld in Sources */,
 				5513A5B4263043F8002D012E /* AppDelegate.m in Sources */,
@@ -373,9 +378,10 @@
 		5513A5BE263043F8002D012E /* PBCoreDataDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				556777A62631A1210091702E /* PBCoreDataDemo2.xcdatamodel */,
 				5513A5BF263043F8002D012E /* PBCoreDataDemo.xcdatamodel */,
 			);
-			currentVersion = 5513A5BF263043F8002D012E /* PBCoreDataDemo.xcdatamodel */;
+			currentVersion = 556777A62631A1210091702E /* PBCoreDataDemo2.xcdatamodel */;
 			path = PBCoreDataDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -2,7 +2,7 @@
 //  PBPerson+CoreDataProperties.m
 //  PBCoreDataDemo
 //
-//  Created by wentao lu on 2021/4/21.
+//  Created by wentao lu on 2021/4/22.
 //
 //
 
@@ -14,7 +14,8 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"PBPerson"];
 }
 
-@dynamic name;
 @dynamic age;
+@dynamic name;
+@dynamic nation;
 
 @end
